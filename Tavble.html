@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table,tr,th,td{
+            border: solid 3px black;
+            border-collapse: collapse;
+            padding: 20px;
+            font-size: large;
+            text-align: center;
+        }
+        th,td{
+          
+            border-style: dashed;
+            border-spacing: 20px;
+        }
+        tr:nth-child(even){
+            background-color: brown;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Table For Understanding</h1>
+    <table>
+        <colgroup >
+            <col span="2" style="background-color: aliceblue;" >
+        </colgroup>
+        <tr>
+            <th>Sr No</th>
+            <th>City</th>
+            <th>Company Name</th>
+            <th>Student Name</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+            <td>AAA</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>BBB</td>
+            <td>BBB</td>
+            <td>BBB</td>
+            <td>BBB</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>CCC</td>
+            <td>CCC</td>
+            <td>CCC</td>
+            <td>CCC</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>DDD</td>
+            <td>DDD</td>
+            <td>DDD</td>
+            <td>DDD</td>
+        </tr>
+        <caption>This is basic table</caption>
+    </table>
+    <hr>
+    <h2>Cell that spans two columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+
+    <table style="width:100%">
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+    </tr>
+    </table>
+    <hr>
+    <h2>Cell that spans two rows</h2>
+
+    <table style="width:100%">
+    <tr>
+        <th rowspan="2">Name</th>
+        <th>Age</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+    </tr>
+    </table>
+</body>
+</html>

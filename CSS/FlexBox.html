@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 800px;
+            /* flex-wrap:wrap; */
+            /* justify-content: end;
+            align-items: center;  */
+            /* align-content: end; */
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            /* background-color: aqua; */
+            /* background: linear-gradient(to right,blue, pink); */
+            /* order: 500; */
+            /* flex-shrink: 4; */
+            /* flex-grow: 1; */
+            /* align-self: end; */
+            background: linear-gradient(
+            217deg,
+            rgb(255 0 0 / 80%),
+            rgb(255 0 0 / 0%) 70.71%
+            ),
+            linear-gradient(127deg, rgb(0 255 0 / 80%), rgb(0 255 0 / 0%) 70.71%),
+            linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+        }
+        #box2{
+            /* background-color: blue; */
+            /* background: linear-gradient(70deg, white, pink); */
+            background: radial-gradient(red 10px, yellow 30%, #1e90ff 50%);
+            /* flex-grow: 1; */
+        }
+        #box3{
+            /* background-color: orange; */
+            background: linear-gradient(red, yellow, blue, orange);
+            /* flex-grow: 1; */
+        }
+        #box4{
+            background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%);
+            /* background-color: brown; */
+            /* order: -1; */
+            /* flex-grow: 1; */
+            /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
